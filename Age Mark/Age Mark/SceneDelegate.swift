@@ -20,19 +20,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let tabBar: UITabBarController = UITabBarController()
         let v1: ViewController = ViewController()
-        v1.view.backgroundColor = UIColor.red
+        //v1.view.backgroundColor = UIColor.red
         v1.title = "主页"
         let v2: SearchViewController = SearchViewController()
-        v2.view.backgroundColor = UIColor.blue
+       // v2.view.backgroundColor = UIColor.blue
         v2.title = "广场"
         let v3: ScanViewController = ScanViewController()
-        v3.view.backgroundColor = UIColor.green
+        //v3.view.backgroundColor = UIColor.green
         v3.title = "扫描"
         let v4: RoundViewController = RoundViewController()
-        v4.view.backgroundColor = UIColor.gray
+        //v4.view.backgroundColor = UIColor.gray
         v4.title = "社区"
         let v5: MyViewController = MyViewController()
-        v5.view.backgroundColor = UIColor.brown
+        //v5.view.backgroundColor = UIColor.brown
         v5.title = "我的"
         tabBar.viewControllers = [v1, v2, v3, v4, v5]
         self.window?.rootViewController = tabBar

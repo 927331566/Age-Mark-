@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         let view = CommunityView()
         view .initView()
         self.view.addSubview(view)
+        self.view.backgroundColor = UIColor.yellow
+        
+        
         // Do any additional setup after loading the view.
     }
 

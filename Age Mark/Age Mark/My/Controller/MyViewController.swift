@@ -15,6 +15,10 @@ class MyViewController: UIViewController {
         let view = MyView()
         view .initView()
         self.view.addSubview(view)
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
+        //self.title = "111111111111111111111111"
+        self.view.backgroundColor = UIColor.white
         // Do any additional setup after loading the view.
     }
     

@@ -17,6 +17,9 @@ class CommunityView: UIView {
     func initView() {
         self.backgroundColor = UIColor.red
         self.frame = CGRect(x: 0, y: 0, width: Width , height: Height)
+        
+        
+        
     }
     /*
     // Only override draw() if you perform custom drawing.
