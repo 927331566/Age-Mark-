@@ -27,7 +27,7 @@ class MyView: UIView {
 //        label.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
         labelFront.text = "个人信息"
         labelFront.font = UIFont.boldSystemFont(ofSize: 24)
-        labelFront.backgroundColor = UIColor.yellow
+        labelFront.textAlignment = NSTextAlignment.center
         labelFront.snp.makeConstraints { make in
             make.left.equalTo(self).offset((Width - 100) / 2)
             make.top.equalTo(self).offset(50)
@@ -35,17 +35,17 @@ class MyView: UIView {
             make.height.equalTo(40)
         }
         
-        let buttonImage = UIButton(type: UIButton.ButtonType.system)
-        buttonImage.setTitle("1111", for: .normal)
+        let buttonImage = UIButton(type: UIButton.ButtonType.custom)
+        buttonImage.setImage(UIImage(named: "MyViewOne"), for: UIControl.State.normal)
         self.addSubview(buttonImage)
-        buttonImage.backgroundColor = UIColor.red
         buttonImage.snp.makeConstraints { make in
             make.left.equalTo(self).offset(30)
             make.top.equalTo(labelFront).offset(100)
             make.width.equalTo(80)
             make.height.equalTo(80)
         }
-        
+        buttonImage.layer.cornerRadius = 40
+        buttonImage.layer.masksToBounds = true
         
         
         
@@ -53,7 +53,6 @@ class MyView: UIView {
         self.addSubview(labelName)
         labelName.text = "Stefani Wong"
         labelName.font = UIFont.boldSystemFont(ofSize: 15)
-        labelName.backgroundColor = UIColor.yellow
         labelName.snp.makeConstraints { make in
             make.left.equalTo(buttonImage).offset(100)
             make.top.equalTo(buttonImage).offset(0)
@@ -68,23 +67,23 @@ class MyView: UIView {
         labelEdit.textColor = UIColor.white
         labelEdit.textAlignment = NSTextAlignment.center
         labelEdit.font = UIFont.boldSystemFont(ofSize: 18)
-        labelEdit.backgroundColor = UIColor.blue
+        labelEdit.backgroundColor = UIColor(red: 160 / 255, green: 185 / 255, blue: 249 / 255, alpha: 1)
         labelEdit.snp.makeConstraints { make in
             make.left.equalTo(self).offset(Width - 100)
             make.top.equalTo(buttonImage).offset(10)
             make.width.equalTo(80)
             make.height.equalTo(30)
         }
-        
+        labelEdit.layer.cornerRadius = 15
+        labelEdit.layer.masksToBounds = true
         
         
         let labelTriva = UILabel()
         self.addSubview(labelTriva)
         labelTriva.text = "旅行"
-        labelTriva.textColor = UIColor.white
+        labelTriva.textColor = UIColor(red: 160 / 255, green: 185 / 255, blue: 249 / 255, alpha: 1)
         labelTriva.textAlignment = NSTextAlignment.center
         labelTriva.font = UIFont.boldSystemFont(ofSize: 15)
-        labelTriva.backgroundColor = UIColor.blue
         labelTriva.snp.makeConstraints { make in
             make.left.equalTo(self).offset(50)
             make.top.equalTo(buttonImage).offset(100)
@@ -109,10 +108,9 @@ class MyView: UIView {
         let labelRuins = UILabel()
         self.addSubview(labelRuins)
         labelRuins.text = "4座废墟"
-        labelRuins.textColor = UIColor.white
+        labelRuins.textColor = UIColor(red: 160 / 255, green: 185 / 255, blue: 249 / 255, alpha: 1)
         labelRuins.textAlignment = NSTextAlignment.center
         labelRuins.font = UIFont.boldSystemFont(ofSize: 15)
-        labelRuins.backgroundColor = UIColor.blue
         labelRuins.snp.makeConstraints { make in
             make.left.equalTo(self).offset(60 + (Width - 100) / 3)
             make.top.equalTo(buttonImage).offset(100)
@@ -137,10 +135,9 @@ class MyView: UIView {
         let labelCountry = UILabel()
         self.addSubview(labelCountry)
         labelCountry.text = "22个国家"
-        labelCountry.textColor = UIColor.white
+        labelCountry.textColor = UIColor(red: 160 / 255, green: 185 / 255, blue: 249 / 255, alpha: 1)
         labelCountry.textAlignment = NSTextAlignment.center
         labelCountry.font = UIFont.boldSystemFont(ofSize: 15)
-        labelCountry.backgroundColor = UIColor.blue
         labelCountry.snp.makeConstraints { make in
             make.left.equalTo(self).offset(70 + (Width - 100) / 3 * 2)
             make.top.equalTo(buttonImage).offset(100)
@@ -256,7 +253,15 @@ class MyView: UIView {
             make.height.equalTo(30)
         }
         
-        
+        let switchFirst = UISwitch()
+        self.addSubview(switchFirst)
+        switchFirst.snp.makeConstraints { make in
+            make.left.equalTo(self).offset(Width - 100)
+            make.top.equalTo(labelReminder).offset(0)
+            make.width.equalTo(60)
+            make.height.equalTo(20)
+        }
+        switchFirst.onTintColor = UIColor(red: 201 / 255, green: 156 / 255, blue: 217 / 255, alpha: 1)
         
         
         let labelOther = UILabel()

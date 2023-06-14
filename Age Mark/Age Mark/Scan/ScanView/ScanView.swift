@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SnapKit
 class ScanView: UIView {
     //定义屏幕的宽和高
     let Width = UIScreen.main.bounds.width
