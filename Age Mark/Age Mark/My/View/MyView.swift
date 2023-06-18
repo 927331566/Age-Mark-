@@ -35,20 +35,48 @@ class MyView: UIView {
             make.height.equalTo(40)
         }
         
+        
+        
+        
+        
+        let imageViewReturn = UIImageView()
+        self.addSubview(imageViewReturn)
+        imageViewReturn.image = UIImage(named: "Back-Navs")
+        imageViewReturn.snp.makeConstraints { make in
+            make.left.equalTo(self).offset(30)
+            make.top.equalTo(labelFront).offset(5)
+            make.width.equalTo(40)
+            make.height.equalTo(40)
+        }
+        
+        
+        let labelMore = UILabel()
+        self.addSubview(labelMore)
+//        label.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        labelMore.text = "···"
+        labelMore.font = UIFont.boldSystemFont(ofSize: 30)
+        labelMore.textAlignment = NSTextAlignment.center
+        labelMore.snp.makeConstraints { make in
+            make.left.equalTo(self).offset(Width - 100)
+            make.top.equalTo(labelFront).offset(0)
+            make.width.equalTo(100)
+            make.height.equalTo(40)
+        }
+        
         let buttonImage = UIButton(type: UIButton.ButtonType.custom)
         buttonImage.setImage(UIImage(named: "MyViewOne"), for: UIControl.State.normal)
         self.addSubview(buttonImage)
         buttonImage.snp.makeConstraints { make in
             make.left.equalTo(self).offset(30)
-            make.top.equalTo(labelFront).offset(100)
+            make.top.equalTo(labelFront).offset(60)
             make.width.equalTo(80)
             make.height.equalTo(80)
         }
         buttonImage.layer.cornerRadius = 40
         buttonImage.layer.masksToBounds = true
-        
-        
-        
+
+
+
         let labelName = UILabel()
         self.addSubview(labelName)
         labelName.text = "Stefani Wong"
@@ -59,8 +87,8 @@ class MyView: UIView {
             make.width.equalTo(150)
             make.height.equalTo(40)
         }
-        
-        
+
+
         let labelEdit = UILabel()
         self.addSubview(labelEdit)
         labelEdit.text = "编辑"
@@ -76,8 +104,8 @@ class MyView: UIView {
         }
         labelEdit.layer.cornerRadius = 15
         labelEdit.layer.masksToBounds = true
-        
-        
+
+
         let labelTriva = UILabel()
         self.addSubview(labelTriva)
         labelTriva.text = "旅行"
@@ -101,10 +129,10 @@ class MyView: UIView {
             make.width.equalTo(80)
             make.height.equalTo(30)
         }
-        
-        
-        
-        
+
+
+
+
         let labelRuins = UILabel()
         self.addSubview(labelRuins)
         labelRuins.text = "4座废墟"
@@ -128,10 +156,10 @@ class MyView: UIView {
             make.width.equalTo(80)
             make.height.equalTo(30)
         }
-        
-        
-        
-        
+
+
+
+
         let labelCountry = UILabel()
         self.addSubview(labelCountry)
         labelCountry.text = "22个国家"
@@ -155,9 +183,9 @@ class MyView: UIView {
             make.width.equalTo(80)
             make.height.equalTo(30)
         }
-        
-        
-        
+
+
+
         let labelAccount = UILabel()
         self.addSubview(labelAccount)
         labelAccount.text = "Account"
@@ -183,6 +211,17 @@ class MyView: UIView {
             make.height.equalTo(30)
         }
 
+        let imageViewInformation = UIImageView()
+        self.addSubview(imageViewInformation)
+        imageViewInformation.image = UIImage(named: "Icon-Profile")
+        imageViewInformation.snp.makeConstraints { make in
+            make.left.equalTo(labelInformation).offset(-60)
+            make.top.equalTo(labelInformation).offset(0)
+            make.width.equalTo(25)
+            make.height.equalTo(25)
+        }
+        
+        
         let labelSuccess = UILabel()
         self.addSubview(labelSuccess)
         labelSuccess.text = "我的成就"
@@ -196,8 +235,8 @@ class MyView: UIView {
             make.height.equalTo(30)
         }
 
-        
-        
+
+
         let labelActivy = UILabel()
         self.addSubview(labelActivy)
         labelActivy.text = "活动记录"
@@ -210,9 +249,9 @@ class MyView: UIView {
             make.width.equalTo(80)
             make.height.equalTo(30)
         }
-        
-        
-        
+
+
+
         let labelPlan = UILabel()
         self.addSubview(labelPlan)
         labelPlan.text = "旅行计划"
@@ -225,10 +264,10 @@ class MyView: UIView {
             make.width.equalTo(80)
             make.height.equalTo(30)
         }
-        
-        
-        
-        
+
+
+
+
         let labelNotification = UILabel()
         self.addSubview(labelNotification)
         labelNotification.text = "Notification"
@@ -252,7 +291,7 @@ class MyView: UIView {
             make.width.equalTo(80)
             make.height.equalTo(30)
         }
-        
+
         let switchFirst = UISwitch()
         self.addSubview(switchFirst)
         switchFirst.snp.makeConstraints { make in
@@ -262,8 +301,8 @@ class MyView: UIView {
             make.height.equalTo(20)
         }
         switchFirst.onTintColor = UIColor(red: 201 / 255, green: 156 / 255, blue: 217 / 255, alpha: 1)
-        
-        
+
+
         let labelOther = UILabel()
         self.addSubview(labelOther)
         labelOther.text = "Other"
@@ -311,8 +350,8 @@ class MyView: UIView {
             make.width.equalTo(80)
             make.height.equalTo(30)
         }
-        
-        
+
+
     }
     /*
     // Only override draw() if you perform custom drawing.
