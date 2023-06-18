@@ -34,6 +34,38 @@ class CommunityView: UIView {
         
         
         
+        let imageViewSoft = UIImageView()
+        self.addSubview(imageViewSoft)
+        imageViewSoft.image = UIImage(named: "Vector 225 (Stroke)")
+        imageViewSoft.snp.makeConstraints { make in
+            make.left.equalTo(labelWelocme).offset(200)
+            make.top.equalTo(labelWelocme).offset(50)
+            make.width.equalTo(68)
+            make.height.equalTo(24)
+        }
+        
+        
+        let imageViewNotification = UIImageView()
+        self.addSubview(imageViewNotification)
+        imageViewNotification.image = UIImage(named: "Notification")
+        imageViewNotification.snp.makeConstraints { make in
+            make.left.equalTo(self).offset(Width - 160)
+            make.top.equalTo(labelWelocme).offset(-30)
+            make.width.equalTo(180)
+            make.height.equalTo(200)
+        }
+        
+        let imageViewVector = UIImageView()
+        self.addSubview(imageViewVector)
+        imageViewVector.image = UIImage(named: "Vector 2")
+        imageViewVector.snp.makeConstraints { make in
+            make.left.equalTo(self).offset(Width - 70)
+            make.top.equalTo(imageViewNotification).offset(120)
+            make.width.equalTo(30)
+            make.height.equalTo(15)
+        }
+        
+        
         let labelRuin = UILabel()
         labelRuin.text = "Ruined World"
         self.addSubview(labelRuin)
@@ -46,6 +78,74 @@ class CommunityView: UIView {
             make.height.equalTo(100)
         }
         
+        
+        
+        let imageViewSearch = UIImageView()
+        self.addSubview(imageViewSearch)
+        imageViewSearch.image = UIImage(named: "Search Bar")
+        imageViewSearch.snp.makeConstraints { make in
+            make.left.equalTo(self).offset(0)
+            make.top.equalTo(labelRuin).offset(60)
+            make.width.equalTo(Width)
+            make.height.equalTo(160)
+        }
+        
+        
+        
+        let imageViewMask = UIImageView()
+        self.addSubview(imageViewMask)
+        imageViewMask.image = UIImage(named: "Mask group_副本")
+        imageViewMask.snp.makeConstraints { make in
+            make.left.equalTo(self).offset(10)
+            make.top.equalTo(imageViewSearch).offset(120)
+            make.width.equalTo((Width - 20) / 2)
+            make.height.equalTo(((Width - 20) / 2) / 152 * 126)
+        }
+        
+        
+        let imageViewTwo = UIImageView()
+        self.addSubview(imageViewTwo)
+        imageViewTwo.image = UIImage(named: "Mask group_副本2")
+        imageViewTwo.snp.makeConstraints { make in
+            make.left.equalTo(imageViewMask).offset((Width - 20) / 2)
+            make.top.equalTo(imageViewMask).offset(0)
+            make.width.equalTo((Width - 20) / 2)
+            make.height.equalTo(((Width - 20) / 2) / 152 * 227)
+        }
+        
+        
+        
+        let imageViewThree = UIImageView()
+        self.addSubview(imageViewThree)
+        imageViewThree.image = UIImage(named: "Mask group-2")
+        imageViewThree.snp.makeConstraints { make in
+            make.left.equalTo(imageViewMask).offset(0)
+            make.top.equalTo(imageViewMask).offset(((Width - 20) / 2) / 152 * 126 - 10)
+            make.width.equalTo((Width - 20) / 2)
+            make.height.equalTo(((Width - 20) / 2) / 159 * 256)
+        }
+        
+        
+        let imageViewFour = UIImageView()
+        self.addSubview(imageViewFour)
+        imageViewFour.image = UIImage(named: "Mask group-2_副本")
+        imageViewFour.snp.makeConstraints { make in
+            make.left.equalTo(imageViewThree).offset((Width - 20) / 2)
+            make.top.equalTo(imageViewTwo).offset(((Width - 20) / 2) / 152 * 227 - 10)
+            make.width.equalTo((Width - 20) / 2)
+            make.height.equalTo(((Width - 20) / 2) / 159 * 109)
+        }
+        
+        
+        let imageViewFive = UIImageView()
+        self.addSubview(imageViewFive)
+        imageViewFive.image = UIImage(named: "Mask group-2_副本2")
+        imageViewFive.snp.makeConstraints { make in
+            make.left.equalTo(imageViewThree).offset(0)
+            make.top.equalTo(imageViewThree).offset(((Width - 20) / 2) / 159 * 256 - 10)
+            make.width.equalTo((Width - 20) / 2)
+            make.height.equalTo(((Width - 20) / 2) / 190 * 157)
+        }
     }
     /*
     // Only override draw() if you perform custom drawing.
