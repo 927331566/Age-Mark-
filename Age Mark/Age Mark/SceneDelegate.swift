@@ -35,6 +35,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //v5.view.backgroundColor = UIColor.brown
         v5.title = "我的"
         tabBar.viewControllers = [v1, v2, v3, v4, v5]
+        tabBar.tabBar.backgroundColor = UIColor.white
         self.window?.rootViewController = tabBar
         
         guard let _ = (scene as? UIWindowScene) else { return }

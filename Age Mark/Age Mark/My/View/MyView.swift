@@ -284,6 +284,15 @@ class MyView: UIView {
             make.height.equalTo(30)
         }
 
+        let imageViewPlan = UIImageView()
+        self.addSubview(imageViewPlan)
+        imageViewPlan.image = UIImage(named: "Icon-Workout")
+        imageViewPlan.snp.makeConstraints { make in
+            make.left.equalTo(labelAccount).offset(0)
+            make.top.equalTo(labelPlan).offset(0)
+            make.width.equalTo(25)
+            make.height.equalTo(25)
+        }
 
 
 
@@ -311,6 +320,18 @@ class MyView: UIView {
             make.height.equalTo(30)
         }
 
+        
+        let imageViewReminder = UIImageView()
+        self.addSubview(imageViewReminder)
+        imageViewReminder.image = UIImage(named: "Icon-Notif")
+        imageViewReminder.snp.makeConstraints { make in
+            make.left.equalTo(labelAccount).offset(0)
+            make.top.equalTo(labelReminder).offset(0)
+            make.width.equalTo(25)
+            make.height.equalTo(25)
+        }
+        
+        
         let switchFirst = UISwitch()
         self.addSubview(switchFirst)
         switchFirst.snp.makeConstraints { make in
@@ -333,6 +354,10 @@ class MyView: UIView {
             make.width.equalTo(150)
             make.height.equalTo(30)
         }
+        
+        
+        
+        
         let labelRelation = UILabel()
         self.addSubview(labelRelation)
         labelRelation.text = "联系我们"
@@ -345,6 +370,16 @@ class MyView: UIView {
             make.width.equalTo(80)
             make.height.equalTo(30)
         }
+        let imageViewRelation = UIImageView()
+        self.addSubview(imageViewRelation)
+        imageViewRelation.image = UIImage(named: "Icon-Message")
+        imageViewRelation.snp.makeConstraints { make in
+            make.left.equalTo(labelAccount).offset(0)
+            make.top.equalTo(labelRelation).offset(0)
+            make.width.equalTo(25)
+            make.height.equalTo(25)
+        }
+        
         let labelPrivacy = UILabel()
         self.addSubview(labelPrivacy)
         labelPrivacy.text = "个人隐私"
@@ -357,6 +392,19 @@ class MyView: UIView {
             make.width.equalTo(80)
             make.height.equalTo(30)
         }
+        
+        
+        let imageViewPrivacy = UIImageView()
+        self.addSubview(imageViewPrivacy)
+        imageViewPrivacy.image = UIImage(named: "Icon-Privacy")
+        imageViewPrivacy.snp.makeConstraints { make in
+            make.left.equalTo(labelAccount).offset(0)
+            make.top.equalTo(labelPrivacy).offset(0)
+            make.width.equalTo(25)
+            make.height.equalTo(25)
+        }
+        
+        
         let labelSetting = UILabel()
         self.addSubview(labelSetting)
         labelSetting.text = "设置"
@@ -370,6 +418,15 @@ class MyView: UIView {
             make.height.equalTo(30)
         }
 
+        let imageViewSetting = UIImageView()
+        self.addSubview(imageViewSetting)
+        imageViewSetting.image = UIImage(named: "Icon-Setting")
+        imageViewSetting.snp.makeConstraints { make in
+            make.left.equalTo(labelAccount).offset(0)
+            make.top.equalTo(labelSetting).offset(0)
+            make.width.equalTo(25)
+            make.height.equalTo(25)
+        }
 
     }
     /*
