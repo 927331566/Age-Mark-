@@ -94,7 +94,7 @@ class CommunityView: UIView {
         
         let imageViewMask = UIImageView()
         self.addSubview(imageViewMask)
-        imageViewMask.image = UIImage(named: "Mask group_副本")
+        imageViewMask.image = UIImage(named: "Mask group-4")
         imageViewMask.snp.makeConstraints { make in
             make.left.equalTo(self).offset(10)
             make.top.equalTo(imageViewSearch).offset(120)
@@ -105,7 +105,7 @@ class CommunityView: UIView {
         
         let imageViewTwo = UIImageView()
         self.addSubview(imageViewTwo)
-        imageViewTwo.image = UIImage(named: "Mask group_副本2")
+        imageViewTwo.image = UIImage(named: "Mask group-3")
         imageViewTwo.snp.makeConstraints { make in
             make.left.equalTo(imageViewMask).offset((Width - 20) / 2)
             make.top.equalTo(imageViewMask).offset(0)
@@ -145,6 +145,17 @@ class CommunityView: UIView {
             make.top.equalTo(imageViewThree).offset(((Width - 20) / 2) / 159 * 256 - 10)
             make.width.equalTo((Width - 20) / 2)
             make.height.equalTo(((Width - 20) / 2) / 190 * 157)
+        }
+        
+        
+        let imageViewSix = UIImageView()
+        self.addSubview(imageViewSix)
+        imageViewSix.image = UIImage(named: "Mask group-2_副本3")
+        imageViewSix.snp.makeConstraints { make in
+            make.left.equalTo(imageViewFive).offset((Width - 20) / 2)
+            make.top.equalTo(imageViewFour).offset(((Width - 20) / 2) / 159 * 109 - 10)
+            make.width.equalTo((Width - 20) / 2)
+            make.height.equalTo(((Width - 20) / 2) / 159 * 131)
         }
     }
     /*
