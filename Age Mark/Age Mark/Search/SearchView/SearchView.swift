@@ -117,10 +117,48 @@ class SearchView: UIView {
         imageViewSeven.image = UIImage(named: "Component 7042")
         imageViewSeven.snp.makeConstraints { make in
             make.left.equalTo(self).offset(10)
-            make.top.equalTo(imageViewSix).offset((Width  - 20 ) / 375 * 236)
+            make.top.equalTo(imageViewSix).offset((Width  - 20 ) / 375 * 236 + 10)
             make.width.equalTo(Width - 20)
             make.height.equalTo((Width  - 20 ) / 375 * 45)
         }
+        
+        
+//        let labelStreet = UILabel()
+//        self.addSubview(labelStreet)
+//        labelStreet.text = "1 hour ago"
+//        labelStreet.textColor = UIColor.systemGray3
+//        labelStreet.font = UIFont.systemFont(ofSize:18)
+//        labelStreet.snp.makeConstraints { make in
+//            make.left.equalTo(self).offset(Width - 100)
+//            make.top.equalTo(labelNameTwo).offset(0)
+//            make.width.equalTo(100)
+//            make.height.equalTo(30)
+//        }
+        
+        
+        
+        let imageViewEight = UIImageView()
+        self.addSubview(imageViewEight)
+        imageViewEight.image = UIImage(named: "Frame 7085-2")
+        imageViewEight.snp.makeConstraints { make in
+            make.left.equalTo(self).offset(10)
+            make.top.equalTo(imageViewSeven).offset((Width  - 20 ) / 375 * 45 + 10)
+            make.width.equalTo(Width - 20)
+            make.height.equalTo((Width  - 20 ) / 335 * 135)
+        }
+        
+        
+        
+        let imageViewNine = UIImageView()
+        self.addSubview(imageViewNine)
+        imageViewNine.image = UIImage(named: "Frame 7091-2")
+        imageViewNine.snp.makeConstraints { make in
+            make.left.equalTo(self).offset(10)
+            make.top.equalTo(imageViewEight).offset((Width  - 20 ) / 335 * 135 + 10)
+            make.width.equalTo(Width - 20)
+            make.height.equalTo((Width  - 20 ) / 347 * 232)
+        }
+
     }
     /*
     // Only override draw() if you perform custom drawing.
