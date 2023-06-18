@@ -215,7 +215,7 @@ class MyView: UIView {
         self.addSubview(imageViewInformation)
         imageViewInformation.image = UIImage(named: "Icon-Profile")
         imageViewInformation.snp.makeConstraints { make in
-            make.left.equalTo(labelInformation).offset(-60)
+            make.left.equalTo(labelAccount).offset(0)
             make.top.equalTo(labelInformation).offset(0)
             make.width.equalTo(25)
             make.height.equalTo(25)
@@ -235,6 +235,15 @@ class MyView: UIView {
             make.height.equalTo(30)
         }
 
+        let imageViewSuccess = UIImageView()
+        self.addSubview(imageViewSuccess)
+        imageViewSuccess.image = UIImage(named: "Icon-Achievement")
+        imageViewSuccess.snp.makeConstraints { make in
+            make.left.equalTo(labelAccount).offset(0)
+            make.top.equalTo(labelSuccess).offset(0)
+            make.width.equalTo(25)
+            make.height.equalTo(25)
+        }
 
 
         let labelActivy = UILabel()
@@ -251,6 +260,16 @@ class MyView: UIView {
         }
 
 
+        
+        let imageViewActivy = UIImageView()
+        self.addSubview(imageViewActivy)
+        imageViewActivy.image = UIImage(named: "Icon-Activity")
+        imageViewActivy.snp.makeConstraints { make in
+            make.left.equalTo(labelAccount).offset(0)
+            make.top.equalTo(labelActivy).offset(0)
+            make.width.equalTo(25)
+            make.height.equalTo(25)
+        }
 
         let labelPlan = UILabel()
         self.addSubview(labelPlan)
