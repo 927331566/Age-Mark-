@@ -9,6 +9,10 @@ import UIKit
 
 class SearchViewController: UIViewController {
     var observer : NSObjectProtocol?
+    
+    var observerTwo : NSObjectProtocol?
+    
+    var observerThree : NSObjectProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
         //添加view
@@ -17,6 +21,22 @@ class SearchViewController: UIViewController {
         self.view.addSubview(view)
         observer = NotificationCenter.default.addObserver(forName: Notification.Name("JumpToRemark"), object: nil, queue: nil, using:  { (notification: Notification) -> Void in
             let viewController = RemarkViewController()
+            viewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+            viewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+            self.present(viewController, animated: false)
+        })
+        
+        
+        observerTwo = NotificationCenter.default.addObserver(forName: Notification.Name("JumpToLikes"), object: nil, queue: nil, using:  { (notification: Notification) -> Void in
+            let viewController = LikesViewController()
+            viewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+            viewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+            self.present(viewController, animated: false)
+        })
+        
+        
+        observerThree = NotificationCenter.default.addObserver(forName: Notification.Name("JumpToPrivacy"), object: nil, queue: nil, using:  { (notification: Notification) -> Void in
+            let viewController = PrivacyViewController()
             viewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
             viewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
             self.present(viewController, animated: false)

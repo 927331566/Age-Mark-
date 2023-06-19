@@ -34,6 +34,8 @@
 		B9CC42CB2A40676E00AE6344 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC42CA2A40676E00AE6344 /* PrivacyView.swift */; };
 		B9CC42CD2A40680900AE6344 /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC42CC2A40680900AE6344 /* LikesViewController.swift */; };
 		B9CC42CF2A40682E00AE6344 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC42CE2A40682E00AE6344 /* PrivacyViewController.swift */; };
+		B9CC42D22A4074EF00AE6344 /* BrunoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC42D12A4074EF00AE6344 /* BrunoViewController.swift */; };
+		B9CC42D42A4074FD00AE6344 /* BrunoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC42D32A4074FD00AE6344 /* BrunoView.swift */; };
 		ECDB7634897001D8FF30C6E9 /* libPods-Age Mark.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B706DB1E5F3B843B7116EC5 /* libPods-Age Mark.a */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +89,8 @@
 		B9CC42CA2A40676E00AE6344 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
 		B9CC42CC2A40680900AE6344 /* LikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
 		B9CC42CE2A40682E00AE6344 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		B9CC42D12A4074EF00AE6344 /* BrunoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrunoViewController.swift; sourceTree = "<group>"; };
+		B9CC42D32A4074FD00AE6344 /* BrunoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrunoView.swift; sourceTree = "<group>"; };
 		C9DA657B6C43E085847CE1BB /* Pods-Age Mark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Age Mark.debug.xcconfig"; path = "Target Support Files/Pods-Age Mark/Pods-Age Mark.debug.xcconfig"; sourceTree = "<group>"; };
 		E39CD473AA369412B0A32475 /* Pods-Age Mark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Age Mark.release.xcconfig"; path = "Target Support Files/Pods-Age Mark/Pods-Age Mark.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -375,10 +379,20 @@
 		B9CC42C72A4066F200AE6344 /* Privacy */ = {
 			isa = PBXGroup;
 			children = (
+				B9CC42D02A4074E000AE6344 /* Bruno */,
 				B9CC42CA2A40676E00AE6344 /* PrivacyView.swift */,
 				B9CC42CE2A40682E00AE6344 /* PrivacyViewController.swift */,
 			);
 			path = Privacy;
+			sourceTree = "<group>";
+		};
+		B9CC42D02A4074E000AE6344 /* Bruno */ = {
+			isa = PBXGroup;
+			children = (
+				B9CC42D12A4074EF00AE6344 /* BrunoViewController.swift */,
+				B9CC42D32A4074FD00AE6344 /* BrunoView.swift */,
+			);
+			path = Bruno;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -540,11 +554,13 @@
 			files = (
 				B9175CE22A38936B007ED1DF /* SearchViewController.swift in Sources */,
 				B9CC42C42A4066DA00AE6344 /* LikesView.swift in Sources */,
+				B9CC42D42A4074FD00AE6344 /* BrunoView.swift in Sources */,
 				B9175CB82A38905D007ED1DF /* Age_Mark.xcdatamodeld in Sources */,
 				B9175CB22A38905D007ED1DF /* ViewController.swift in Sources */,
 				B9CC42C12A40658D00AE6344 /* RemarkView.swift in Sources */,
 				B9CC42CB2A40676E00AE6344 /* PrivacyView.swift in Sources */,
 				B9175CF02A389648007ED1DF /* MyView.swift in Sources */,
+				B9CC42D22A4074EF00AE6344 /* BrunoViewController.swift in Sources */,
 				B9175CFE2A389AE9007ED1DF /* SearchView.swift in Sources */,
 				B9CC42B72A3F53F800AE6344 /* CommunityTwoView.swift in Sources */,
 				B9CC42BF2A40657D00AE6344 /* RemarkViewController.swift in Sources */,

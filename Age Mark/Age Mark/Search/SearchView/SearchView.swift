@@ -287,9 +287,11 @@ class SearchView: UIView {
     }
     @objc func pressLikes() {
         print("22222")
+        NotificationCenter.default.post(name: Notification.Name("JumpToLikes"), object: nil)
     }
     @objc func pressPrivacy() {
         print("33333")
+        NotificationCenter.default.post(name: Notification.Name("JumpToPrivacy"), object: nil)
     }
     /*
     // Only override draw() if you perform custom drawing.

@@ -10,6 +10,7 @@ import UIKit
 class PrivacyViewController: UIViewController {
 
     var observer : NSObjectProtocol?
+    var observerTwo : NSObjectProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +22,14 @@ class PrivacyViewController: UIViewController {
         
         observer = NotificationCenter.default.addObserver(forName: Notification.Name("ReturnToSearch"), object: nil, queue: nil, using:  { (notification: Notification) -> Void in
             self.dismiss(animated: false)
+        })
+        
+        
+        observerTwo = NotificationCenter.default.addObserver(forName: Notification.Name("JumpToBruno"), object: nil, queue: nil, using:  { (notification: Notification) -> Void in
+            let viewController = BrunoViewController()
+            viewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+            viewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+            self.present(viewController, animated: false)
         })
         // Do any additional setup after loading the view.
     }
