@@ -67,6 +67,60 @@ class LikesView: UIView {
         }
         
         
+        let imageViewTwo = UIImageView()
+        imageViewTwo.image = UIImage(named: "Frame 427319642")
+        self.addSubview(imageViewTwo)
+        imageViewTwo.snp.makeConstraints { make in
+            make.left.equalTo(imageViewOne).offset((Width - 50) / 2 + 10)
+            make.top.equalTo(imageViewOne).offset(0)
+            make.width.equalTo((Width - 50) / 2)
+            make.height.equalTo((Width - 50) / 2 / 158 * 190)
+        }
+        
+        let imageViewThree = UIImageView()
+        imageViewThree.image = UIImage(named: "Group 1000003290 1")
+        self.addSubview(imageViewThree)
+        imageViewThree.snp.makeConstraints { make in
+            make.left.equalTo(imageViewOne).offset(0)
+            make.top.equalTo(imageViewOne).offset((Width - 50) / 2 / 158 * 190 + 10)
+            make.width.equalTo((Width - 50) / 2)
+            make.height.equalTo((Width - 50) / 2 / 158 * 190)
+        }
+        
+        
+        let imageViewFour = UIImageView()
+        imageViewFour.image = UIImage(named: "Group 1000003291")
+        self.addSubview(imageViewFour)
+        imageViewFour.snp.makeConstraints { make in
+            make.left.equalTo(imageViewThree).offset((Width - 50) / 2 + 10)
+            make.top.equalTo(imageViewThree).offset(0)
+            make.width.equalTo((Width - 50) / 2)
+            make.height.equalTo((Width - 50) / 2 / 158 * 190)
+        }
+        
+        
+        
+        let imageViewFive = UIImageView()
+        imageViewFive.image = UIImage(named: "Group 1000003292")
+        self.addSubview(imageViewFive)
+        imageViewFive.snp.makeConstraints { make in
+            make.left.equalTo(imageViewThree).offset(0)
+            make.top.equalTo(imageViewThree).offset((Width - 50) / 2 / 158 * 190 + 10)
+            make.width.equalTo((Width - 50) / 2)
+            make.height.equalTo((Width - 50) / 2 / 158 * 190)
+        }
+        
+        
+        let imageViewSix = UIImageView()
+        imageViewSix.image = UIImage(named: "Group 1000003291")
+        self.addSubview(imageViewSix)
+        imageViewSix.snp.makeConstraints { make in
+            make.left.equalTo(imageViewFive).offset((Width - 50) / 2 + 10)
+            make.top.equalTo(imageViewFive).offset(0)
+            make.width.equalTo((Width - 50) / 2)
+            make.height.equalTo((Width - 50) / 2 / 158 * 190)
+        }
+        
     }
     
     
