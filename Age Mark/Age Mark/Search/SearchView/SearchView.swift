@@ -9,15 +9,74 @@ import UIKit
 
 import SnapKit
 class SearchView: UIView {
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 3
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "11111", for: indexPath)
+//        cell.backgroundColor = UIColor.systemGray5
+//        if (indexPath.row == 0) {
+//            let imageView = UIImageView()
+//            imageView.frame = CGRect(x: 15, y: 15, width: 20, height: 20)
+//            cell.addSubview(imageView)
+//            imageView.image = UIImage(named: "Document")
+//            let button = UIButton()
+//            button.setTitle("评论", for: UIControl.State.normal)
+//            button.frame = CGRect(x: 40, y: 0, width: 50, height: 50)
+//            button.setTitleColor(UIColor.black, for: UIControl.State.normal)
+//            cell.addSubview(button)
+//        }
+//        if (indexPath.row == 1) {
+//            let imageView = UIImageView()
+//            imageView.frame = CGRect(x: 15, y: 15, width: 20, height: 20)
+//            cell.addSubview(imageView)
+//            imageView.image = UIImage(named: "Heart")
+//            let button = UIButton()
+//            button.setTitle("点赞", for: UIControl.State.normal)
+//            button.frame = CGRect(x: 40, y: 0, width: 50, height: 50)
+//            button.setTitleColor(UIColor.black, for: UIControl.State.normal)
+//            cell.addSubview(button)
+//        }
+//        if (indexPath.row == 2) {
+//            let imageView = UIImageView()
+//            imageView.frame = CGRect(x: 15, y: 15, width: 20, height: 20)
+//            cell.addSubview(imageView)
+//            imageView.image = UIImage(named: "Chat")
+//            let button = UIButton()
+//            button.setTitle("私信", for: UIControl.State.normal)
+//            button.frame = CGRect(x: 40, y: 0, width: 50, height: 50)
+//            button.setTitleColor(UIColor.black, for: UIControl.State.normal)
+//            cell.addSubview(button)
+//        }
+//        return cell
+//    }
+//
+    
+    
     //定义屏幕的宽和高
     let Width = UIScreen.main.bounds.width
     let Height = UIScreen.main.bounds.height
     
+    let buttonOne = UIButton(type: UIButton.ButtonType.custom)
+    //let textViewFront = UITableView()
     
     //初始化view
     func initView() {
         self.backgroundColor = UIColor.white
         self.frame = CGRect(x: 0, y: 0, width: Width , height: Height)
+        
+        //let tableView = UITableView(frame: CGRect(x: 230, y: 120, width: 100, height: 300))
+        //tableView.delegate = self
+        //tableView.dataSource = self
+        //self.addSubview(tableView)
+        //tableView.register(NSClassFromString("UITableViewCell"), forCellReuseIdentifier: "11111")
+//        tableView.snp.makeConstraints { make in
+//            make.left.equalTo(self).offset(100)
+//            make.top.equalTo(self).offset(100)
+//            make.width.equalTo(100)
+//            make.height.equalTo(100)
+//        }
         
         
         let imageViewSecond = UIImageView()
@@ -165,14 +224,72 @@ class SearchView: UIView {
 
     }
     @objc func pressButtonNoti(button : UIButton) {
-        if (button.isSelected == false) {
-            button.isSelected = true
-            print("1111")
-        }
+        //self.addSubview(tableview)
+        button.isSelected = !button.isSelected
+        print(button.isSelected)
         if (button.isSelected == true) {
-            button.isSelected = false
-            print("2222")
+            buttonOne.setImage(UIImage(named: "Frame 427319635"), for: UIControl.State.normal)
+            self.addSubview(buttonOne)
+            buttonOne.snp.makeConstraints { make in
+                make.left.equalTo(self).offset(250)
+                make.top.equalTo(self).offset(110)
+                make.width.equalTo(85)
+                make.height.equalTo(142)
+            }
+            
+            
+            let buttonRemark = UIButton(type: UIButton.ButtonType.custom)
+            //buttonRemark.backgroundColor = UIColor.red
+            buttonOne.addSubview(buttonRemark)
+            buttonRemark.snp.makeConstraints { make in
+                make.left.equalTo(buttonOne).offset(0)
+                make.top.equalTo(buttonOne).offset(0)
+                make.width.equalTo(85)
+                make.height.equalTo(47)
+            }
+            buttonRemark.addTarget(self, action: #selector(pressRemark), for: UIControl.Event.touchUpInside)
+            
+            
+            
+            let buttonLikes = UIButton(type: UIButton.ButtonType.custom)
+            //buttonLikes.backgroundColor = UIColor.red
+            buttonOne.addSubview(buttonLikes)
+            buttonLikes.snp.makeConstraints { make in
+                make.left.equalTo(buttonRemark).offset(0)
+                make.top.equalTo(buttonRemark).offset(47)
+                make.width.equalTo(85)
+                make.height.equalTo(47)
+            }
+            buttonLikes.addTarget(self, action: #selector(pressLikes), for: UIControl.Event.touchUpInside)
+            
+            
+            
+            let buttonPrivate = UIButton(type: UIButton.ButtonType.custom)
+            //buttonPrivate.backgroundColor = UIColor.red
+            buttonOne.addSubview(buttonPrivate)
+            buttonPrivate.snp.makeConstraints { make in
+                make.left.equalTo(buttonLikes).offset(0)
+                make.top.equalTo(buttonLikes).offset(47)
+                make.width.equalTo(85)
+                make.height.equalTo(47)
+            }
+            buttonPrivate.addTarget(self, action: #selector(pressPrivacy), for: UIControl.Event.touchUpInside)
         }
+        if (button.isSelected == false) {
+            buttonOne.removeFromSuperview()
+        }
+        
+    }
+    @objc func pressRemark() {
+        print("11111")
+        NotificationCenter.default.post(name: Notification.Name("JumpToRemark"), object: nil)
+        
+    }
+    @objc func pressLikes() {
+        print("22222")
+    }
+    @objc func pressPrivacy() {
+        print("33333")
     }
     /*
     // Only override draw() if you perform custom drawing.

@@ -1,25 +1,27 @@
 //
-//  SearchViewController.swift
+//  RemarkViewController.swift
 //  Age Mark
 //
-//  Created by 王璐 on 2023/6/13.
+//  Created by 王璐 on 2023/6/19.
 //
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class RemarkViewController: UIViewController {
+
     var observer : NSObjectProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //添加view
-        let view = SearchView()
+        let view = RemarkView()
         view .initView()
         self.view.addSubview(view)
-        observer = NotificationCenter.default.addObserver(forName: Notification.Name("JumpToRemark"), object: nil, queue: nil, using:  { (notification: Notification) -> Void in
-            let viewController = RemarkViewController()
-            viewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
-            viewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-            self.present(viewController, animated: false)
+        
+        
+        
+        observer = NotificationCenter.default.addObserver(forName: Notification.Name("ReturnToSearch"), object: nil, queue: nil, using:  { (notification: Notification) -> Void in
+            self.dismiss(animated: false)
         })
         // Do any additional setup after loading the view.
     }
