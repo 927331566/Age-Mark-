@@ -40,15 +40,19 @@ class SearchView: UIView {
             make.height.equalTo(50)
         }
         
-        let imageViewFour = UIImageView()
-        self.addSubview(imageViewFour)
-        imageViewFour.image = UIImage(named: "Notification-Icon")
-        imageViewFour.snp.makeConstraints { make in
+        let buttonNotification = UIButton(type: UIButton.ButtonType.custom)
+        self.addSubview(buttonNotification)
+        buttonNotification.setImage(UIImage(named: "Notification-Icon"), for: UIControl.State.normal)
+        buttonNotification.snp.makeConstraints { make in
             make.left.equalTo(self).offset(280)
             make.top.equalTo(self).offset(75)
             make.width.equalTo(30)
             make.height.equalTo(30)
         }
+        buttonNotification.addTarget(self, action: #selector(pressButtonNoti(button:)), for: UIControl.Event.touchUpInside)
+        
+        
+        
         
         let labelName = UILabel()
         self.addSubview(labelName)
@@ -159,6 +163,16 @@ class SearchView: UIView {
             make.height.equalTo((Width  - 20 ) / 347 * 232)
         }
 
+    }
+    @objc func pressButtonNoti(button : UIButton) {
+        if (button.isSelected == false) {
+            button.isSelected = true
+            print("1111")
+        }
+        if (button.isSelected == true) {
+            button.isSelected = false
+            print("2222")
+        }
     }
     /*
     // Only override draw() if you perform custom drawing.

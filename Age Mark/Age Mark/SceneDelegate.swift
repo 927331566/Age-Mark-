@@ -30,6 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
        // v2.view.backgroundColor = UIColor.blue
         //v2.title = "广场"
         let v3: ScanViewController = ScanViewController()
+        v3.tabBarItem.image = UIImage(named: "Frame 427319634")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
         //v3.view.backgroundColor = UIColor.green
         //v3.title = "扫描"
         let v4: RoundViewController = RoundViewController()
