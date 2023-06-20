@@ -203,8 +203,9 @@
 		B9175CE02A38927A007ED1DF /* Community */ = {
 			isa = PBXGroup;
 			children = (
-				B9CC42BC2A3F550800AE6344 /* Community */,
+				B99BEBFE2A418B2900C4CC08 /* CommunityFirst */,
 				B9CC42B52A3F53DA00AE6344 /* CommunityTwo */,
+				B99BEBF72A4183C800C4CC08 /* CommunityThree */,
 			);
 			path = Community;
 			sourceTree = "<group>";
@@ -212,11 +213,10 @@
 		B9175CE32A389379007ED1DF /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				B99BEBFF2A418B8400C4CC08 /* SearchFirst */,
 				B9CC42C72A4066F200AE6344 /* Privacy */,
 				B9CC42C22A4066CC00AE6344 /* Likes */,
 				B9CC42BD2A40656E00AE6344 /* Remark */,
-				B9175CFB2A389AB6007ED1DF /* SearchView */,
-				B9175CFC2A389AC8007ED1DF /* SerachController */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -331,10 +331,44 @@
 		B99BEBF72A4183C800C4CC08 /* CommunityThree */ = {
 			isa = PBXGroup;
 			children = (
-				B99BEBF82A4183E800C4CC08 /* CommunityViewThree.swift */,
-				B99BEBFA2A41840600C4CC08 /* CommunityViewThreeViewController.swift */,
+				B99BEBFD2A418B0700C4CC08 /* View */,
+				B99BEBFC2A418AFC00C4CC08 /* Controller */,
 			);
 			path = CommunityThree;
+			sourceTree = "<group>";
+		};
+		B99BEBFC2A418AFC00C4CC08 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B99BEBFA2A41840600C4CC08 /* CommunityViewThreeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B99BEBFD2A418B0700C4CC08 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B99BEBF82A4183E800C4CC08 /* CommunityViewThree.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B99BEBFE2A418B2900C4CC08 /* CommunityFirst */ = {
+			isa = PBXGroup;
+			children = (
+				B9175D012A389B24007ED1DF /* CommunityView */,
+				B9175D022A389B39007ED1DF /* CommunityViewController */,
+			);
+			path = CommunityFirst;
+			sourceTree = "<group>";
+		};
+		B99BEBFF2A418B8400C4CC08 /* SearchFirst */ = {
+			isa = PBXGroup;
+			children = (
+				B9175CFC2A389AC8007ED1DF /* SerachController */,
+				B9175CFB2A389AB6007ED1DF /* SearchView */,
+			);
+			path = SearchFirst;
 			sourceTree = "<group>";
 		};
 		B9CC42B52A3F53DA00AE6344 /* CommunityTwo */ = {
@@ -360,16 +394,6 @@
 				B9CC42BA2A3F542D00AE6344 /* CommunityTwoViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		B9CC42BC2A3F550800AE6344 /* Community */ = {
-			isa = PBXGroup;
-			children = (
-				B99BEBF72A4183C800C4CC08 /* CommunityThree */,
-				B9175D022A389B39007ED1DF /* CommunityViewController */,
-				B9175D012A389B24007ED1DF /* CommunityView */,
-			);
-			path = Community;
 			sourceTree = "<group>";
 		};
 		B9CC42BD2A40656E00AE6344 /* Remark */ = {

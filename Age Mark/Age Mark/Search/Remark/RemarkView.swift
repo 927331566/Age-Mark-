@@ -38,6 +38,29 @@ class RemarkView: UIView {
             make.height.equalTo(Width / 375 * 48)
         }
         buttonReturn.addTarget(self, action: #selector(returnSearchView), for: UIControl.Event.touchUpInside)
+        
+        
+        let imageViewTwo = UIImageView()
+        imageViewTwo.image = UIImage(named: "Frame 7091-2_副本")
+        self.addSubview(imageViewTwo)
+        imageViewTwo.snp.makeConstraints { make in
+            make.left.equalTo(imageView).offset(0)
+            make.top.equalTo(imageView).offset(Width / 375 * 48)
+            make.width.equalTo(Width)
+            make.height.equalTo(Width / 347 * 686)
+        }
+        
+        
+        let imageViewThree = UIImageView()
+        imageViewThree.image = UIImage(named: "Frame 33841")
+        self.addSubview(imageViewThree)
+        imageViewThree.snp.makeConstraints { make in
+            make.left.equalTo(imageViewTwo).offset(0)
+            make.top.equalTo(imageViewTwo).offset(385)
+            make.width.equalTo(Width)
+            make.height.equalTo(Width / 375 * 387)
+        }
+        
     }
     
     @objc func returnSearchView() {

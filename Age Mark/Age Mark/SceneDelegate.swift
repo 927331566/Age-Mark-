@@ -27,6 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let v2: SearchViewController = SearchViewController()
         v2.tabBarItem.selectedImage = UIImage(named: "Category 2")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
         v2.tabBarItem.image = UIImage(named: "Category")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+        //v2.tabBarItem.imageInsets = UIEdgeInsets(top: 50, left: 40, bottom: 30, right: 30)
        // v2.view.backgroundColor = UIColor.blue
         //v2.title = "广场"
         let v3: ScanViewController = ScanViewController()
