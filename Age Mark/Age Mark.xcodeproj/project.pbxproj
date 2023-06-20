@@ -26,6 +26,8 @@
 		B9175CFA2A389A8A007ED1DF /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9175CF92A389A8A007ED1DF /* ScanView.swift */; };
 		B9175CFE2A389AE9007ED1DF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9175CFD2A389AE9007ED1DF /* SearchView.swift */; };
 		B9175D002A389B1E007ED1DF /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9175CFF2A389B1E007ED1DF /* CommunityView.swift */; };
+		B99BEBF92A4183E800C4CC08 /* CommunityViewThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99BEBF82A4183E800C4CC08 /* CommunityViewThree.swift */; };
+		B99BEBFB2A41840600C4CC08 /* CommunityViewThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99BEBFA2A41840600C4CC08 /* CommunityViewThreeViewController.swift */; };
 		B9CC42B72A3F53F800AE6344 /* CommunityTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC42B62A3F53F800AE6344 /* CommunityTwoView.swift */; };
 		B9CC42BB2A3F542D00AE6344 /* CommunityTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC42BA2A3F542D00AE6344 /* CommunityTwoViewController.swift */; };
 		B9CC42BF2A40657D00AE6344 /* RemarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC42BE2A40657D00AE6344 /* RemarkViewController.swift */; };
@@ -81,6 +83,8 @@
 		B9175CF92A389A8A007ED1DF /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		B9175CFD2A389AE9007ED1DF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		B9175CFF2A389B1E007ED1DF /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		B99BEBF82A4183E800C4CC08 /* CommunityViewThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewThree.swift; sourceTree = "<group>"; };
+		B99BEBFA2A41840600C4CC08 /* CommunityViewThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewThreeViewController.swift; sourceTree = "<group>"; };
 		B9CC42B62A3F53F800AE6344 /* CommunityTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTwoView.swift; sourceTree = "<group>"; };
 		B9CC42BA2A3F542D00AE6344 /* CommunityTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTwoViewController.swift; sourceTree = "<group>"; };
 		B9CC42BE2A40657D00AE6344 /* RemarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemarkViewController.swift; sourceTree = "<group>"; };
@@ -324,6 +328,15 @@
 			path = CommunityViewController;
 			sourceTree = "<group>";
 		};
+		B99BEBF72A4183C800C4CC08 /* CommunityThree */ = {
+			isa = PBXGroup;
+			children = (
+				B99BEBF82A4183E800C4CC08 /* CommunityViewThree.swift */,
+				B99BEBFA2A41840600C4CC08 /* CommunityViewThreeViewController.swift */,
+			);
+			path = CommunityThree;
+			sourceTree = "<group>";
+		};
 		B9CC42B52A3F53DA00AE6344 /* CommunityTwo */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +365,7 @@
 		B9CC42BC2A3F550800AE6344 /* Community */ = {
 			isa = PBXGroup;
 			children = (
+				B99BEBF72A4183C800C4CC08 /* CommunityThree */,
 				B9175D022A389B39007ED1DF /* CommunityViewController */,
 				B9175D012A389B24007ED1DF /* CommunityView */,
 			);
@@ -571,8 +585,10 @@
 				B9175CE92A3893C5007ED1DF /* RoundViewController.swift in Sources */,
 				B9175CB02A38905D007ED1DF /* SceneDelegate.swift in Sources */,
 				B9175CEB2A3893D3007ED1DF /* MyViewController.swift in Sources */,
+				B99BEBF92A4183E800C4CC08 /* CommunityViewThree.swift in Sources */,
 				B9CC42CF2A40682E00AE6344 /* PrivacyViewController.swift in Sources */,
 				B9175CE62A3893A9007ED1DF /* ScanViewController.swift in Sources */,
+				B99BEBFB2A41840600C4CC08 /* CommunityViewThreeViewController.swift in Sources */,
 				B9CC42BB2A3F542D00AE6344 /* CommunityTwoViewController.swift in Sources */,
 				B9175CF52A3899C3007ED1DF /* RoundView.swift in Sources */,
 			);

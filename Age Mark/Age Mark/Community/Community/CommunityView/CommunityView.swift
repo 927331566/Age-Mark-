@@ -103,16 +103,17 @@ class CommunityView: UIView {
         }
         
         
-        let imageViewTwo = UIImageView()
-        self.addSubview(imageViewTwo)
-        imageViewTwo.image = UIImage(named: "Mask group-3")
-        imageViewTwo.snp.makeConstraints { make in
+        let button = UIButton(type: UIButton.ButtonType.custom)
+        self.addSubview(button)
+        button.setImage(UIImage(named: "Mask group-3"), for: UIControl.State.normal)
+        //button.image = UIImage(named: "Mask group-3")
+        button.snp.makeConstraints { make in
             make.left.equalTo(imageViewMask).offset((Width - 20) / 2)
             make.top.equalTo(imageViewMask).offset(0)
             make.width.equalTo((Width - 20) / 2)
             make.height.equalTo(((Width - 20) / 2) / 152 * 227)
         }
-        
+        button.addTarget(self, action: #selector(pressNext), for: UIControl.Event.touchUpInside)
         
         
         let imageViewThree = UIImageView()
@@ -131,7 +132,7 @@ class CommunityView: UIView {
         imageViewFour.image = UIImage(named: "Mask group-2_副本")
         imageViewFour.snp.makeConstraints { make in
             make.left.equalTo(imageViewThree).offset((Width - 20) / 2)
-            make.top.equalTo(imageViewTwo).offset(((Width - 20) / 2) / 152 * 227 - 10)
+            make.top.equalTo(button).offset(((Width - 20) / 2) / 152 * 227 - 10)
             make.width.equalTo((Width - 20) / 2)
             make.height.equalTo(((Width - 20) / 2) / 159 * 109)
         }
@@ -157,6 +158,9 @@ class CommunityView: UIView {
             make.width.equalTo((Width - 20) / 2)
             make.height.equalTo(((Width - 20) / 2) / 159 * 131)
         }
+    }
+    @objc func pressNext() {
+        NotificationCenter.default.post(name: Notification.Name("JumpToCommunityTwo"), object: nil)
     }
     /*
     // Only override draw() if you perform custom drawing.
