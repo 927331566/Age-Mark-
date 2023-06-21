@@ -21,6 +21,13 @@ class MyView: UIView {
         self.backgroundColor = UIColor.white
         self.frame = CGRect(x: 0, y: 0, width: Width , height: Height)
         
+        
+        
+        
+        
+        
+        
+        
         //初始化上边的label
         let labelFront = UILabel()
         self.addSubview(labelFront)
@@ -428,6 +435,17 @@ class MyView: UIView {
             make.height.equalTo(25)
         }
 
+        
+        
+        let label = UILabel()
+        self.addSubview(label)
+        label.backgroundColor = UIColor.white
+        label.snp.makeConstraints { make in
+            make.left.equalTo(self).offset(30)
+            make.top.equalTo(self).offset(55)
+            make.width.equalTo(50)
+            make.height.equalTo(40)
+        }
     }
     /*
     // Only override draw() if you perform custom drawing.
