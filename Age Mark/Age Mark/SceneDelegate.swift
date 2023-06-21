@@ -46,7 +46,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let v5: MyViewController = MyViewController()
         v5.tabBarItem.selectedImage = UIImage(named: "Profile-Active_副本3")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
         v5.tabBarItem.image = UIImage(named: "Profile_副本2")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-        v5.tabBarItem.imageInsets = UIEdgeInsets(top: 60, left: 20, bottom: 20, right: 25)
+        v5.tabBarItem.imageInsets = UIEdgeInsets(top: 65, left: 20, bottom: 15, right: 25)
         //v5.view.backgroundColor = UIColor.brown
         //v5.title = "我的"
         tabBar.viewControllers = [v1, v2, v3, v4, v5]
