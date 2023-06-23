@@ -28,6 +28,7 @@
 		B9175D002A389B1E007ED1DF /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9175CFF2A389B1E007ED1DF /* CommunityView.swift */; };
 		B99BEBF92A4183E800C4CC08 /* CommunityViewThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99BEBF82A4183E800C4CC08 /* CommunityViewThree.swift */; };
 		B99BEBFB2A41840600C4CC08 /* CommunityViewThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99BEBFA2A41840600C4CC08 /* CommunityViewThreeViewController.swift */; };
+		B99BED3C2A4583FD00C4CC08 /* ScanViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99BED3B2A4583FD00C4CC08 /* ScanViewControllerTwo.swift */; };
 		B9CC42B72A3F53F800AE6344 /* CommunityTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC42B62A3F53F800AE6344 /* CommunityTwoView.swift */; };
 		B9CC42BB2A3F542D00AE6344 /* CommunityTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC42BA2A3F542D00AE6344 /* CommunityTwoViewController.swift */; };
 		B9CC42BF2A40657D00AE6344 /* RemarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC42BE2A40657D00AE6344 /* RemarkViewController.swift */; };
@@ -85,6 +86,7 @@
 		B9175CFF2A389B1E007ED1DF /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
 		B99BEBF82A4183E800C4CC08 /* CommunityViewThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewThree.swift; sourceTree = "<group>"; };
 		B99BEBFA2A41840600C4CC08 /* CommunityViewThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewThreeViewController.swift; sourceTree = "<group>"; };
+		B99BED3B2A4583FD00C4CC08 /* ScanViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewControllerTwo.swift; sourceTree = "<group>"; };
 		B9CC42B62A3F53F800AE6344 /* CommunityTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTwoView.swift; sourceTree = "<group>"; };
 		B9CC42BA2A3F542D00AE6344 /* CommunityTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTwoViewController.swift; sourceTree = "<group>"; };
 		B9CC42BE2A40657D00AE6344 /* RemarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemarkViewController.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 			children = (
 				B9175CF82A389A7E007ED1DF /* ScanView */,
 				B9175CF72A389A69007ED1DF /* ScanController */,
+				B99BED3B2A4583FD00C4CC08 /* ScanViewControllerTwo.swift */,
 			);
 			path = Scan;
 			sourceTree = "<group>";
@@ -600,6 +603,7 @@
 				B9175CF02A389648007ED1DF /* MyView.swift in Sources */,
 				B9CC42D22A4074EF00AE6344 /* BrunoViewController.swift in Sources */,
 				B9175CFE2A389AE9007ED1DF /* SearchView.swift in Sources */,
+				B99BED3C2A4583FD00C4CC08 /* ScanViewControllerTwo.swift in Sources */,
 				B9CC42B72A3F53F800AE6344 /* CommunityTwoView.swift in Sources */,
 				B9CC42BF2A40657D00AE6344 /* RemarkViewController.swift in Sources */,
 				B9175CAE2A38905D007ED1DF /* AppDelegate.swift in Sources */,
