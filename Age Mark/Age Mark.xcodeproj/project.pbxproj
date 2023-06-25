@@ -29,9 +29,10 @@
 		B9788E7D2A482CBE005E0BB0 /* CommunityFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9788E7C2A482CBE005E0BB0 /* CommunityFourViewController.swift */; };
 		B9788E7F2A482CD8005E0BB0 /* CommunityFourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9788E7E2A482CD8005E0BB0 /* CommunityFourView.swift */; };
 		B9788E812A482DA4005E0BB0 /* Greek_Temple.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B9788E802A482DA4005E0BB0 /* Greek_Temple.usdz */; };
+		B9788E842A48313F005E0BB0 /* ScanViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9788E832A48313F005E0BB0 /* ScanViewTwo.swift */; };
+		B9788E862A483158005E0BB0 /* ScanViewTwoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9788E852A483158005E0BB0 /* ScanViewTwoController.swift */; };
 		B99BEBF92A4183E800C4CC08 /* CommunityViewThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99BEBF82A4183E800C4CC08 /* CommunityViewThree.swift */; };
 		B99BEBFB2A41840600C4CC08 /* CommunityViewThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99BEBFA2A41840600C4CC08 /* CommunityViewThreeViewController.swift */; };
-		B99BED3C2A4583FD00C4CC08 /* ScanViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99BED3B2A4583FD00C4CC08 /* ScanViewControllerTwo.swift */; };
 		B9CC42B72A3F53F800AE6344 /* CommunityTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC42B62A3F53F800AE6344 /* CommunityTwoView.swift */; };
 		B9CC42BB2A3F542D00AE6344 /* CommunityTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC42BA2A3F542D00AE6344 /* CommunityTwoViewController.swift */; };
 		B9CC42BF2A40657D00AE6344 /* RemarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC42BE2A40657D00AE6344 /* RemarkViewController.swift */; };
@@ -90,9 +91,10 @@
 		B9788E7C2A482CBE005E0BB0 /* CommunityFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityFourViewController.swift; sourceTree = "<group>"; };
 		B9788E7E2A482CD8005E0BB0 /* CommunityFourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityFourView.swift; sourceTree = "<group>"; };
 		B9788E802A482DA4005E0BB0 /* Greek_Temple.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Greek_Temple.usdz; sourceTree = "<group>"; };
+		B9788E832A48313F005E0BB0 /* ScanViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewTwo.swift; sourceTree = "<group>"; };
+		B9788E852A483158005E0BB0 /* ScanViewTwoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewTwoController.swift; sourceTree = "<group>"; };
 		B99BEBF82A4183E800C4CC08 /* CommunityViewThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewThree.swift; sourceTree = "<group>"; };
 		B99BEBFA2A41840600C4CC08 /* CommunityViewThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewThreeViewController.swift; sourceTree = "<group>"; };
-		B99BED3B2A4583FD00C4CC08 /* ScanViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewControllerTwo.swift; sourceTree = "<group>"; };
 		B9CC42B62A3F53F800AE6344 /* CommunityTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTwoView.swift; sourceTree = "<group>"; };
 		B9CC42BA2A3F542D00AE6344 /* CommunityTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTwoViewController.swift; sourceTree = "<group>"; };
 		B9CC42BE2A40657D00AE6344 /* RemarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemarkViewController.swift; sourceTree = "<group>"; };
@@ -234,9 +236,9 @@
 		B9175CE42A38939B007ED1DF /* Scan */ = {
 			isa = PBXGroup;
 			children = (
+				B9788E822A483121005E0BB0 /* ScanViewTwo */,
 				B9175CF82A389A7E007ED1DF /* ScanView */,
 				B9175CF72A389A69007ED1DF /* ScanController */,
-				B99BED3B2A4583FD00C4CC08 /* ScanViewControllerTwo.swift */,
 			);
 			path = Scan;
 			sourceTree = "<group>";
@@ -346,6 +348,15 @@
 				B9788E7E2A482CD8005E0BB0 /* CommunityFourView.swift */,
 			);
 			path = CommunityFour;
+			sourceTree = "<group>";
+		};
+		B9788E822A483121005E0BB0 /* ScanViewTwo */ = {
+			isa = PBXGroup;
+			children = (
+				B9788E832A48313F005E0BB0 /* ScanViewTwo.swift */,
+				B9788E852A483158005E0BB0 /* ScanViewTwoController.swift */,
+			);
+			path = ScanViewTwo;
 			sourceTree = "<group>";
 		};
 		B99BEBF72A4183C800C4CC08 /* CommunityThree */ = {
@@ -619,13 +630,14 @@
 				B9CC42C12A40658D00AE6344 /* RemarkView.swift in Sources */,
 				B9CC42CB2A40676E00AE6344 /* PrivacyView.swift in Sources */,
 				B9175CF02A389648007ED1DF /* MyView.swift in Sources */,
+				B9788E862A483158005E0BB0 /* ScanViewTwoController.swift in Sources */,
 				B9788E7D2A482CBE005E0BB0 /* CommunityFourViewController.swift in Sources */,
 				B9CC42D22A4074EF00AE6344 /* BrunoViewController.swift in Sources */,
 				B9788E7F2A482CD8005E0BB0 /* CommunityFourView.swift in Sources */,
 				B9175CFE2A389AE9007ED1DF /* SearchView.swift in Sources */,
-				B99BED3C2A4583FD00C4CC08 /* ScanViewControllerTwo.swift in Sources */,
 				B9CC42B72A3F53F800AE6344 /* CommunityTwoView.swift in Sources */,
 				B9CC42BF2A40657D00AE6344 /* RemarkViewController.swift in Sources */,
+				B9788E842A48313F005E0BB0 /* ScanViewTwo.swift in Sources */,
 				B9175CAE2A38905D007ED1DF /* AppDelegate.swift in Sources */,
 				B9CC42CD2A40680900AE6344 /* LikesViewController.swift in Sources */,
 				B9175D002A389B1E007ED1DF /* CommunityView.swift in Sources */,

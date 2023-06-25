@@ -34,7 +34,7 @@ class ScanViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     func JumpToNext() {
-            let viewController = ScanViewControllerTwo()
+            let viewController = ScanViewTwoController()
             viewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
             viewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
             self.present(viewController, animated: false)
