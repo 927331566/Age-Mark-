@@ -64,7 +64,7 @@ class CommunityTwoView: UIView {
         self.addSubview(imageViewThree)
         imageViewThree.snp.makeConstraints { make in
             make.left.equalTo(self).offset(0)
-            make.top.equalTo(imageViewTwo).offset(Width / 391 * 536 - 81)
+            make.top.equalTo(imageViewTwo).offset(Width / 391 * 536 - 61)
             make.width.equalTo(Width)
             make.height.equalTo(Width / 375 * 78)
         }

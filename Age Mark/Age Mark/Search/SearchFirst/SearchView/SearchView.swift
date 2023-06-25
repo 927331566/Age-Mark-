@@ -103,7 +103,7 @@ class SearchView: UIView {
         self.addSubview(buttonNotification)
         buttonNotification.setImage(UIImage(named: "Notification-Icon"), for: UIControl.State.normal)
         buttonNotification.snp.makeConstraints { make in
-            make.left.equalTo(self).offset(280)
+            make.left.equalTo(self).offset(250)
             make.top.equalTo(self).offset(75)
             make.width.equalTo(30)
             make.height.equalTo(30)
@@ -231,7 +231,7 @@ class SearchView: UIView {
             buttonOne.setImage(UIImage(named: "Frame 427319635"), for: UIControl.State.normal)
             self.addSubview(buttonOne)
             buttonOne.snp.makeConstraints { make in
-                make.left.equalTo(self).offset(250)
+                make.left.equalTo(self).offset(220)
                 make.top.equalTo(self).offset(110)
                 make.width.equalTo(85)
                 make.height.equalTo(142)
