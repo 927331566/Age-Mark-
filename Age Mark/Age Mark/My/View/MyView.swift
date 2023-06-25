@@ -227,7 +227,7 @@ class MyView: UIView {
             make.width.equalTo(25)
             make.height.equalTo(25)
         }
-        
+         
         
         let labelSuccess = UILabel()
         self.addSubview(labelSuccess)

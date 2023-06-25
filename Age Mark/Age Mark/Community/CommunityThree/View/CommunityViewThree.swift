@@ -21,6 +21,17 @@ class CommunityViewThree: UIView {
         
         
         
+        let imageViewOne = UIImageView()
+        imageViewOne.image = UIImage(named: "Rectangle 33")
+        self.addSubview(imageViewOne)
+        imageViewOne.snp.makeConstraints { make in
+            make.left.equalTo(self).offset(0)
+            make.top.equalTo(self).offset(0)
+            make.width.equalTo(Width)
+            make.height.equalTo(Height)
+        }
+        
+        
         sceneView = SCNView()
         sceneView.frame = CGRect(x: 0, y: 100, width: Width, height: Width)
         sceneView.accessibilityViewIsModal = false
@@ -63,6 +74,7 @@ class CommunityViewThree: UIView {
             make.width.equalTo(Width - 40)
             make.height.equalTo((Width - 20) / 289 * 218)
         }
+        imageView.backgroundColor = UIColor.clear
 //        let imageView = UIImageView()
 //        imageView.image = UIImage(named: "Info")
 //        self.addSubview(imageView)
@@ -85,13 +97,13 @@ class CommunityViewThree: UIView {
 //        }
 //
         let button = UIButton(type: UIButton.ButtonType.custom)
-        button.setImage(UIImage(named: "close_副本"), for: UIControl.State.normal)
+        button.setImage(UIImage(named: "Frame 427319655"), for: UIControl.State.normal)
         self.addSubview(button)
         button.backgroundColor = UIColor(red: 63 / 255, green: 63 / 255, blue: 63 / 255, alpha: 1)
         button.snp.makeConstraints { make in
             make.left.equalTo(self).offset(30)
             make.top.equalTo(self).offset(50)
-            make.width.equalTo(40)
+            make.width.equalTo(50)
             make.height.equalTo(40)
         }
         button.addTarget(self, action: #selector(returnTwo), for: UIControl.Event.touchUpInside)
@@ -118,13 +130,13 @@ class CommunityViewThree: UIView {
         
         
         let buttonThree = UIButton(type: UIButton.ButtonType.custom)
-        buttonThree.setImage(UIImage(named: "share"), for: UIControl.State.normal)
+        buttonThree.setImage(UIImage(named: "Frame 427319654"), for: UIControl.State.normal)
         self.addSubview(buttonThree)
         buttonThree.backgroundColor = UIColor(red: 63 / 255, green: 63 / 255, blue: 63 / 255, alpha: 1)
         buttonThree.snp.makeConstraints { make in
             make.left.equalTo(self).offset(Width - 70)
             make.top.equalTo(self).offset(50)
-            make.width.equalTo(40)
+            make.width.equalTo(50)
             make.height.equalTo(40)
         }
         buttonThree.layer.cornerRadius = 8
@@ -133,7 +145,6 @@ class CommunityViewThree: UIView {
     
     @objc func returnTwo() {
         NotificationCenter.default.post(name: Notification.Name("ReturnToCommunityTwo"), object: nil)
-        
     }
     /*
     // Only override draw() if you perform custom drawing.
