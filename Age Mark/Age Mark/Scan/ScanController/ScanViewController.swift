@@ -18,7 +18,7 @@ class ScanViewController: UIViewController {
         
 
         let imageViewOne = UIImageView()
-        imageViewOne.image = UIImage(named: "扫描界面")
+        imageViewOne.image = UIImage(named: "Frame 427319646 1")
         self.view.addSubview(imageViewOne)
         imageViewOne.snp.makeConstraints { make in
             make.left.equalTo(self.view).offset(0)
@@ -31,7 +31,6 @@ class ScanViewController: UIViewController {
 
         let buttonTwo = UIButton(type: UIButton.ButtonType.custom)
         self.view.addSubview(buttonTwo)
-        buttonTwo.backgroundColor = UIColor.red
         buttonTwo.snp.makeConstraints { make in
             make.left.equalTo(self.view).offset(30)
             make.top.equalTo(self.view).offset(650)
@@ -72,6 +71,7 @@ class ScanViewController: UIViewController {
         viewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
         viewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         self.present(viewController, animated: false)
+        
     }
     /*
     // MARK: - Navigation
