@@ -29,6 +29,17 @@ class ScanViewTwo: UIView {
         }
         button.addTarget(self, action: #selector(returnScanView), for: UIControl.Event.touchUpInside)
          
+        
+        
+        let imageViewOne = UIImageView()
+        imageViewOne.image = UIImage(named: "4. Home – nearby")
+        self.addSubview(imageViewOne)
+        imageViewOne.snp.makeConstraints { make in
+            make.left.equalTo(self).offset(0)
+            make.top.equalTo(self).offset(0)
+            make.width.equalTo(Width)
+            make.height.equalTo(Height)
+        }
     }
      
     

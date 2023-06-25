@@ -69,10 +69,10 @@ class CommunityViewThree: UIView {
         imageView.image = UIImage(named: "Frame 427319653")
         self.addSubview(imageView)
         imageView.snp.makeConstraints { make in
-            make.left.equalTo(self).offset(20)
-            make.top.equalTo(sceneView).offset(Width)
-            make.width.equalTo(Width - 40)
-            make.height.equalTo((Width - 20) / 289 * 218)
+            make.left.equalTo(self).offset(40)
+            make.top.equalTo(sceneView).offset(Width + 20)
+            make.width.equalTo(Width - 80)
+            make.height.equalTo((Width - 40) / 289 * 218)
         }
         imageView.backgroundColor = UIColor.clear
 //        let imageView = UIImageView()
@@ -102,7 +102,7 @@ class CommunityViewThree: UIView {
         button.backgroundColor = UIColor(red: 63 / 255, green: 63 / 255, blue: 63 / 255, alpha: 1)
         button.snp.makeConstraints { make in
             make.left.equalTo(self).offset(30)
-            make.top.equalTo(self).offset(50)
+            make.top.equalTo(self).offset(70)
             make.width.equalTo(50)
             make.height.equalTo(40)
         }
@@ -119,7 +119,7 @@ class CommunityViewThree: UIView {
         buttonTwo.backgroundColor = UIColor(red: 63 / 255, green: 63 / 255, blue: 63 / 255, alpha: 1)
         buttonTwo.snp.makeConstraints { make in
             make.left.equalTo(self).offset((Width - 160) / 2)
-            make.top.equalTo(self).offset(50)
+            make.top.equalTo(button).offset(0)
             make.width.equalTo(160)
             make.height.equalTo(40)
         }
@@ -135,7 +135,7 @@ class CommunityViewThree: UIView {
         buttonThree.backgroundColor = UIColor(red: 63 / 255, green: 63 / 255, blue: 63 / 255, alpha: 1)
         buttonThree.snp.makeConstraints { make in
             make.left.equalTo(self).offset(Width - 70)
-            make.top.equalTo(self).offset(50)
+            make.top.equalTo(button).offset(0)
             make.width.equalTo(50)
             make.height.equalTo(40)
         }
