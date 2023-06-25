@@ -21,11 +21,14 @@ class ScanViewTwoController: UIViewController {
         
         observer = NotificationCenter.default.addObserver(forName: Notification.Name("ReturnToScanTwo"), object: nil, queue: nil, using:  { (notification: Notification) -> Void in
             self.dismiss(animated: false)
+            self.NotiFication()
         })
         // Do any additional setup after loading the view.
     }
     
-
+    func NotiFication() {
+        NotificationCenter.default.post(name: Notification.Name("ReturnToScan"), object: nil)
+    }
     /*
     // MARK: - Navigation
 

@@ -99,16 +99,13 @@ class CommunityViewThree: UIView {
         let button = UIButton(type: UIButton.ButtonType.custom)
         button.setImage(UIImage(named: "Frame 427319655"), for: UIControl.State.normal)
         self.addSubview(button)
-        button.backgroundColor = UIColor(red: 63 / 255, green: 63 / 255, blue: 63 / 255, alpha: 1)
         button.snp.makeConstraints { make in
             make.left.equalTo(self).offset(30)
             make.top.equalTo(self).offset(70)
-            make.width.equalTo(50)
-            make.height.equalTo(40)
+            make.width.equalTo(60)
+            make.height.equalTo(45)
         }
         button.addTarget(self, action: #selector(returnTwo), for: UIControl.Event.touchUpInside)
-        button.layer.cornerRadius = 8
-        button.layer.masksToBounds = true
         
         
         
@@ -116,15 +113,12 @@ class CommunityViewThree: UIView {
         let buttonTwo = UIButton(type: UIButton.ButtonType.custom)
         buttonTwo.setImage(UIImage(named: "tab"), for: UIControl.State.normal)
         self.addSubview(buttonTwo)
-        buttonTwo.backgroundColor = UIColor(red: 63 / 255, green: 63 / 255, blue: 63 / 255, alpha: 1)
         buttonTwo.snp.makeConstraints { make in
             make.left.equalTo(self).offset((Width - 160) / 2)
             make.top.equalTo(button).offset(0)
-            make.width.equalTo(160)
-            make.height.equalTo(40)
+            make.width.equalTo(163)
+            make.height.equalTo(45)
         }
-        buttonTwo.layer.cornerRadius = 8
-        buttonTwo.layer.masksToBounds = true
         
         
         
@@ -132,15 +126,12 @@ class CommunityViewThree: UIView {
         let buttonThree = UIButton(type: UIButton.ButtonType.custom)
         buttonThree.setImage(UIImage(named: "Frame 427319654"), for: UIControl.State.normal)
         self.addSubview(buttonThree)
-        buttonThree.backgroundColor = UIColor(red: 63 / 255, green: 63 / 255, blue: 63 / 255, alpha: 1)
         buttonThree.snp.makeConstraints { make in
-            make.left.equalTo(self).offset(Width - 70)
+            make.left.equalTo(self).offset(Width - 80)
             make.top.equalTo(button).offset(0)
-            make.width.equalTo(50)
-            make.height.equalTo(40)
+            make.width.equalTo(60)
+            make.height.equalTo(45)
         }
-        buttonThree.layer.cornerRadius = 8
-        buttonThree.layer.masksToBounds = true
     }
     
     @objc func returnTwo() {

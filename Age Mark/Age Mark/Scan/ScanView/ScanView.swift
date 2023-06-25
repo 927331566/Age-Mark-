@@ -18,10 +18,30 @@ class ScanView: UIView {
         self.backgroundColor = UIColor.yellow
         self.frame = CGRect(x: 0, y: 0, width: Width , height: Height)
         
-        
-        
-        
-//        
+//
+//        let imageViewOne = UIImageView()
+//        imageViewOne.image = UIImage(named: "扫描界面")
+//        self.addSubview(imageViewOne)
+//        imageViewOne.snp.makeConstraints { make in
+//            make.left.equalTo(self).offset(0)
+//            make.top.equalTo(self).offset(0)
+//            make.width.equalTo(Width)
+//            make.height.equalTo(Height - 60)
+//        }
+//
+//
+//
+//        let buttonTwo = UIButton(type: UIButton.ButtonType.custom)
+//        self.addSubview(buttonTwo)
+//        buttonTwo.backgroundColor = UIColor.red
+//        buttonTwo.snp.makeConstraints { make in
+//            make.left.equalTo(self).offset(30)
+//            make.top.equalTo(self).offset(600)
+//            make.width.equalTo(300)
+//            make.height.equalTo(50)
+//        }
+//        buttonTwo.addTarget(self, action: #selector(pressController), for: UIControl.Event.touchUpInside)
+////
 //        let alertController = UIAlertController(title: "Age Mark 需要权限使用相机", message: "访问您的相机，以便您进行建筑识别，隔空涂鸦，发布打卡等", preferredStyle: .alert)
 //
 //        // 添加操作按钮
@@ -53,4 +73,7 @@ class ScanView: UIView {
          */
         
     }
+//    @objc func pressController() {
+//        NotificationCenter.default.post(name: Notification.Name("pressController"), object: nil)
+//    }
 }

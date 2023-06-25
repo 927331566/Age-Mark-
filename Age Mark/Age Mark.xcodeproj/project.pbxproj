@@ -31,6 +31,7 @@
 		B9788E812A482DA4005E0BB0 /* Greek_Temple.usdz in Resources */ = {isa = PBXBuildFile; fileRef = B9788E802A482DA4005E0BB0 /* Greek_Temple.usdz */; };
 		B9788E842A48313F005E0BB0 /* ScanViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9788E832A48313F005E0BB0 /* ScanViewTwo.swift */; };
 		B9788E862A483158005E0BB0 /* ScanViewTwoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9788E852A483158005E0BB0 /* ScanViewTwoController.swift */; };
+		B9788E882A488F88005E0BB0 /* ScanViewControllerThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9788E872A488F88005E0BB0 /* ScanViewControllerThree.swift */; };
 		B99BEBF92A4183E800C4CC08 /* CommunityViewThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99BEBF82A4183E800C4CC08 /* CommunityViewThree.swift */; };
 		B99BEBFB2A41840600C4CC08 /* CommunityViewThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99BEBFA2A41840600C4CC08 /* CommunityViewThreeViewController.swift */; };
 		B9CC42B72A3F53F800AE6344 /* CommunityTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CC42B62A3F53F800AE6344 /* CommunityTwoView.swift */; };
@@ -93,6 +94,7 @@
 		B9788E802A482DA4005E0BB0 /* Greek_Temple.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Greek_Temple.usdz; sourceTree = "<group>"; };
 		B9788E832A48313F005E0BB0 /* ScanViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewTwo.swift; sourceTree = "<group>"; };
 		B9788E852A483158005E0BB0 /* ScanViewTwoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewTwoController.swift; sourceTree = "<group>"; };
+		B9788E872A488F88005E0BB0 /* ScanViewControllerThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewControllerThree.swift; sourceTree = "<group>"; };
 		B99BEBF82A4183E800C4CC08 /* CommunityViewThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewThree.swift; sourceTree = "<group>"; };
 		B99BEBFA2A41840600C4CC08 /* CommunityViewThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewThreeViewController.swift; sourceTree = "<group>"; };
 		B9CC42B62A3F53F800AE6344 /* CommunityTwoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTwoView.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 		B9175CE42A38939B007ED1DF /* Scan */ = {
 			isa = PBXGroup;
 			children = (
+				B9788E872A488F88005E0BB0 /* ScanViewControllerThree.swift */,
 				B9788E822A483121005E0BB0 /* ScanViewTwo */,
 				B9175CF82A389A7E007ED1DF /* ScanView */,
 				B9175CF72A389A69007ED1DF /* ScanController */,
@@ -650,6 +653,7 @@
 				B9175CE62A3893A9007ED1DF /* ScanViewController.swift in Sources */,
 				B99BEBFB2A41840600C4CC08 /* CommunityViewThreeViewController.swift in Sources */,
 				B9CC42BB2A3F542D00AE6344 /* CommunityTwoViewController.swift in Sources */,
+				B9788E882A488F88005E0BB0 /* ScanViewControllerThree.swift in Sources */,
 				B9175CF52A3899C3007ED1DF /* RoundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
